@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng máy tính</title>
+</head>
+<body>
+<form>
+    <input type="number" placeholder="nhập số thứ 1" id="number1"> <input type="number" placeholder="nhập số thứ 2" id="number2"><br>
+    <button type="button" onclick="cong()">Cộng(+)</button>
+    <button type="button" onclick="tru()">trừ(-)</button>
+    <button  type="button" onclick="nhan()">nhân(x)</button>
+    <button  type="button" onclick="chia()">chia(/)</button><br>
+    <p id="ketqua"></p>
+
+    <script>
+
+        function cong(){
+            let t = document.getElementById("number1").value;
+            let y = document.getElementById("number2").value;
+            a = parseInt(t);
+            b = parseInt(y);
+            let a1 = a + b;
+
+          document.getElementById("ketqua").innerHTML = "<h1>kết quả <h1></h1>"+ a1;
+        }
+        function tru(){
+            let t = document.getElementById("number1").value;
+            let y = document.getElementById("number2").value;
+            a = parseInt(t);
+            b = parseInt(y);
+            let a1 = a - b;
+
+            document.getElementById("ketqua").innerHTML = "<h1>kết quả <h1></h1>"+ a1;
+        }
+        function nhan(){
+            let t = document.getElementById("number1").value;
+            let y = document.getElementById("number2").value;
+            a = parseInt(t);
+            b = parseInt(y);
+            let a1 = a * b;
+
+            document.getElementById("ketqua").innerHTML = "<h1>kết quả <h1></h1>"+ a1;
+        }
+        function chia(){
+            let t = document.getElementById("number1").value;
+            let y = document.getElementById("number2").value;
+            a = parseInt(t);
+            b = parseInt(y);
+            let a1 = a / b;
+              document.getElementById("ketqua").innerHTML = "<h1>kết quả <h1></h1>"+ a1;
+        }
+    </script>
+
+</form>
+</body>
+</html>
